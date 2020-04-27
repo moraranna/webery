@@ -1,0 +1,50 @@
+body {
+	padding-top: 70px;
+	font-family: 'Poppins', sans-serif;
+	color: #3e3e48;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a:focus {
+	outline: none;
+}
+
+a[nohref] {
+	cursor: pointer;
+}
+
+.container {
+	position: relative;
+	max-width: 1170px;
+}
+
+header img,
+main img,
+footer img {
+	pointer-events: none;
+}
+
+.section-title {
+	margin-bottom: 6px;
+	font-family: 'Gentium Book Basic', serif;
+	color: #8bd5ff;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 1.1px;
+}
+
+h2 {
+	font-size: 35px;
+	line-height: 45px;
+	font-weight: 400;
+	letter-spacing: 5.005px;
+	text-transform: uppercase;
+}
+
+/* BREAKPOINTS */
+@media (min-width: 768px) {
+	body {
+		padding-top: 121px;
+	}
+}
