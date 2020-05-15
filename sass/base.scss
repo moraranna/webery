@@ -1,4 +1,4 @@
-// VARIABLES
+// BASE
 
 $grey: #3e3e48;
 $lgrey: #e0e0e0;
@@ -7,17 +7,10 @@ $blue: #8bd5ff;
 $orange: #ff6464;
 $black: #24242b;
 
-$body-color: $grey;
-
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1170px, xxl: 1320px) !default;
-
-$font-family-sans-serif: 'Poppins', sans-serif !default;
-$headings-font-weight: 400 !default;
-
-// BASE
-
 body {
 	padding-top: 70px;
+	font-family: 'Poppins', sans-serif;
+	color: $grey;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
@@ -36,6 +29,7 @@ a:focus {
 
 .container {
 	position: relative;
+	max-width: 1170px;
 }
 
 header img,
@@ -59,6 +53,7 @@ h1 {
 	color: #fff;
 	font-size: 44px;
 	line-height: 70px;
+	font-weight: 400;
 	letter-spacing: 9.98px;
 	text-transform: uppercase;
 
@@ -71,6 +66,7 @@ h1 {
 h2 {
 	font-size: 35px;
 	line-height: 45px;
+	font-weight: 400;
 	letter-spacing: 5.005px;
 	text-transform: uppercase;
 }
@@ -370,13 +366,13 @@ header {
 			padding-top: 198px;
 			z-index: 2;
 		}
-	}
 
-	.hero-desc {
-		color: $lgrey;
-		font-size: 15px;
-		line-height: 25px;
-		letter-spacing: 0.6px;
+		.hero-desc {
+			color: $lgrey;
+			font-size: 15px;
+			line-height: 25px;
+			letter-spacing: 0.6px;
+		}
 	}
 
 	.hero-img-container {
