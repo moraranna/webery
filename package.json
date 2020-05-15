@@ -1,0 +1,27 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "trial task for webery",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/base.scss css/base.css -w sass/bootstrap.scss css/bootstrap.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moraranna/webery.git"
+  },
+  "author": "moraranna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moraranna/webery/issues"
+  },
+  "homepage": "https://github.com/moraranna/webery#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
