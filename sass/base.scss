@@ -1,4 +1,4 @@
-// BASE
+// VARIABLES
 
 $grey: #3e3e48;
 $lgrey: #e0e0e0;
@@ -7,14 +7,21 @@ $blue: #8bd5ff;
 $orange: #ff6464;
 $black: #24242b;
 
+$body-color: $grey;
+
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1170px, xxl: 1320px) !default;
+
+$font-family-sans-serif: 'Poppins', sans-serif !default;
+$headings-font-weight: 400 !default;
+
+// BASE
+
 body {
 	padding-top: 70px;
-	font-family: 'Poppins', sans-serif;
-	color: $grey;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	@include media-breakpoint-up(md) {
+	@media (min-width: 768px) {
 		padding-top: 121px;
 	}
 }
@@ -29,7 +36,6 @@ a:focus {
 
 .container {
 	position: relative;
-	max-width: 1170px;
 }
 
 header img,
@@ -53,11 +59,10 @@ h1 {
 	color: #fff;
 	font-size: 44px;
 	line-height: 70px;
-	font-weight: 400;
 	letter-spacing: 9.98px;
 	text-transform: uppercase;
 
-	@include media-breakpoint-up(md) {
+	@media (min-width: 768px) {
 		font-size: 60px;
 		letter-spacing: 19.98px;
 	}
@@ -66,7 +71,6 @@ h1 {
 h2 {
 	font-size: 35px;
 	line-height: 45px;
-	font-weight: 400;
 	letter-spacing: 5.005px;
 	text-transform: uppercase;
 }
@@ -261,7 +265,7 @@ header {
 							.nav-link {
 								letter-spacing: 0;
 	
-								@include media-breakpoint-up(md) {
+								@media (min-width: 768px) {
 									padding-right: 0;
 									padding-left: 31px;
 								}
@@ -353,32 +357,32 @@ header {
 	padding-bottom: 91px;
 	background-color: $black;
 
-	@include media-breakpoint-up(md) {
+	@media (min-width: 768px) {
 		padding-bottom: 131px;
 	}
 
-	@include media-breakpoint-up(lg) {
+	@media (min-width: 992px) {
 		padding-bottom: 431px;
 	}
 
 	.hero-desc-container {
-		@include media-breakpoint-up(lg) {
+		@media (min-width: 992px) {
 			padding-top: 198px;
 			z-index: 2;
 		}
+	}
 
-		.hero-desc {
-			color: $lgrey;
-			font-size: 15px;
-			line-height: 25px;
-			letter-spacing: 0.6px;
-		}
+	.hero-desc {
+		color: $lgrey;
+		font-size: 15px;
+		line-height: 25px;
+		letter-spacing: 0.6px;
 	}
 
 	.hero-img-container {
 		margin-top: 40px;
 
-		@include media-breakpoint-up(lg) {
+		@media (min-width: 992px) {
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -397,12 +401,12 @@ header {
 			clip-path: polygon(100% 79%, 50% 79%, 50% 100%, 0 100%, 0 0, 100% 0);
 			animation: img-after 2s ease-in;
 
-			@include media-breakpoint-up(lg) {
+			@media (min-width: 992px) {
 				width: 165px;
 				height: 533px;
 			}
 
-			@include media-breakpoint-up(xl) {
+			@media (min-width: 1200px) {
 				width: 195px;
 				height: 613px;
 			}
@@ -421,11 +425,11 @@ header {
 	padding-top: 76px;
 	padding-bottom: 60px;
 
-	@include media-breakpoint-up(md) {
+	@media (min-width: 768px) {
 		padding-bottom: 80px;
 	}
 
-	@include media-breakpoint-up(lg) {
+	@media (min-width: 992px) {
 		padding-top: 116px;
 		padding-bottom: 100px;
 	}
@@ -502,12 +506,12 @@ header {
 	padding-bottom: 60px;
 	background-color: #f7f7f7;
 
-	@include media-breakpoint-up(md) {
+	@media (min-width: 768px) {
 		padding-top: 85px;
 		padding-bottom: 90px;
 	}
 
-	@include media-breakpoint-up(lg) {
+	@media (min-width: 992px) {
 		padding-top: 115px;
 		padding-bottom: 120px;
 	}
@@ -525,7 +529,7 @@ footer {
 	background-color: $black;
 
 	.footer-info-container {
-		@include media-breakpoint-up(md) {
+		@media (min-width: 768px) {
 			display: flex;
 			justify-content: space-between;
 		}
@@ -533,7 +537,7 @@ footer {
 		p {
 			text-align: center;
 	
-			@include media-breakpoint-up(md) {
+			@media (min-width: 768px) {
 				margin: 0;
 			}
 		}
@@ -559,7 +563,7 @@ footer {
 	img {
 		margin-bottom: 20px;
 
-		@include media-breakpoint-up(md) {
+		@media (min-width: 768px) {
 			margin-bottom: 0;
 		}
 	}
